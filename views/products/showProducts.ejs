@@ -1,0 +1,8 @@
+<h1>HELLO</h1>
+
+<h2><%= product.name %></h2>
+
+<a href="/products/<%= product.id %>/edit"><button>Edit</button></a>
+<form style= "display: inline;" action = "/products/<%= product._id %>?_method=DELETE" method = "POST">
+<button>Delete</button>
+</form>

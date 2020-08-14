@@ -1,0 +1,12 @@
+<h1>EDIT PRODUCT: <%= product.name %></h1>
+
+<form action = "/products/<%= product._id %>?_method=PUT" method = "POST">
+    <input type="text" placeholder = "product name" value="<%= product.name %>" name = "products[name]">
+    <input type="text" placeholder = "description" value="<%= product.description   %>" name = "products[description]">
+    <input type="number" placeholder = "price" value="<%= product.price   %>" name = "products[price]">
+    <input type="text" placeholder = "date bought" value="<%= product.dateBought   %>" name = "products[dateBought]">
+    <input type="text" placeholder = "date received" value="<%= product.dateReceived   %>" name = "products[dateReceived]">
+    <input type="text" placeholder = "serial number" value="<%= product.serialNumber   %>" name = "products[serialNumber]">
+    <input type="text" placeholder = "image" value="<%= product.image   %>" name = "products[image]">
+    <button>Submit</button>
+</form>

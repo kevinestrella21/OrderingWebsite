@@ -1,0 +1,15 @@
+<h1>YOUR PRODUCTS ARE HERE</h1>
+
+<div>
+    <ol> 
+
+<% products.forEach(function(p){ %>
+ 
+        <li>
+            <a href="/products/<%=p.id%>"> <%= p.name %> </a>
+        </li>
+
+<% }); %>
+
+    </ol>
+</div>
